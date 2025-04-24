@@ -1,0 +1,18 @@
+name: Multi Job Workflow
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Job 1 Step
+        run: echo "This is Job 1"
+
+  job2:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Job 2 Step
+        run: echo "This is Job 2"
