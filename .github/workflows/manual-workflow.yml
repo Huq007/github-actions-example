@@ -1,0 +1,10 @@
+name: Manual-Workflow
+on:
+  workflow_dispatch:
+
+jobs:
+  manual-workflow:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run a manual command
+        run: echo "This is a manual workflow!"
